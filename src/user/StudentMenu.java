@@ -15,7 +15,7 @@ public class StudentMenu {
 		System.out.println("               STUDENT MENU");
 		System.out.println("=========================================");
 		System.out.println("1. Update");
-		System.out.println("\npress anything else to go back");
+		System.out.println("\nPress 0 else to go back");
 		System.out.println("=========================================");
 		System.out.println("Enter Choice");
 	}

@@ -28,7 +28,7 @@ public class AdminMenu {
 		System.out.println("7. Insert Student");
 		System.out.println("8. Delete Student");
 		System.out.println("9. Update Student");
-		System.out.println("\npress anything else to go back");
+		System.out.println("\nPress 0 else to go back");
 		System.out.println("=========================================");
 		System.out.println("Enter Choice");
 	}

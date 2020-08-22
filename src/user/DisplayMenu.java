@@ -19,7 +19,7 @@ public class DisplayMenu {
 		System.out.println("1. Display Course");
 		System.out.println("2. Display Professor");
 		System.out.println("3. Display Student");
-		System.out.println("\npress anything else to go back");
+		System.out.println("\nPress 0 else to go back");
 		System.out.println("=========================================");
 		System.out.println("Enter Choice ");
 	}
