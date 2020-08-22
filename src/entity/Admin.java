@@ -8,4 +8,5 @@ public class Admin {
 	Scanner in =new Scanner(System.in);
 	String choice=in.next();
 	
-	
+	}
+}
