@@ -27,14 +27,16 @@ public class StudentMenu {
 		int ch = Integer.parseInt(br.readLine());
 		
 		switch (ch) {
+		
+		case 0:
+			return false;
 
-		case 1:	{
+		case 1:
 			System.out.println("Enter Student Name and ID");
 				String name = br.readLine();
 				int id = Integer.parseInt(br.readLine());
 			StudentOperations.updateStudent(con, name, id);
 			break;
-		}
 
 		default:
 			System.out.println("Invalid Input !!!");

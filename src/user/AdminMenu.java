@@ -40,6 +40,9 @@ public class AdminMenu {
 		int ch = Integer.parseInt(br.readLine());
 		
 		switch (ch) {
+		
+		case 0:
+			return false;
 
 		case 1:	{
 			System.out.println("Enter Course Name and ID");

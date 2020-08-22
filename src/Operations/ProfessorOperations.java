@@ -53,7 +53,7 @@ public class ProfessorOperations {
 			while(rs.next())
 			{   
 				int professorId = rs.getInt("professorId");  
-				String professorName = rs.getString(" professorName");
+				String professorName = rs.getString("professorName");
 				Professor professoro = new Professor(professorName,professorId); //calling student constructor
 				professor.add(professoro);
 			}

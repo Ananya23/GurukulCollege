@@ -54,10 +54,14 @@ public class MainUserInterface {
 				case 4:	main=false;
 						disp=true;
 						break;
+				
+				case 5:
+						System.out.println("THANKS FOR USING!\nSEE YOU SOON");
+						return;
 						
 				default:
-						System.out.println("THANKS!");
-						return;					
+						System.out.println("Invalid Input !!!");
+						break;
 				}
 			}
 			

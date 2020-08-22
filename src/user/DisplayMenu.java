@@ -31,6 +31,9 @@ public class DisplayMenu {
 		int ch = Integer.parseInt(br.readLine());
 		
 		switch (ch) {
+		
+		case 0:
+			return false;
 
 		case 1:
 			CourseOperations.displayCourse(con);
