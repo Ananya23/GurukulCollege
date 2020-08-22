@@ -14,7 +14,7 @@ public class ProfessorMenu {
 	public static void displayMenu() {
 		
 		System.out.println("\n\n=========================================");
-		System.out.println("			PROFESSOR MENU");
+		System.out.println("              PROFESSOR MENU");
 		System.out.println("=========================================");
 		System.out.println("1. Display Course");
 		System.out.println("2. Display Professor");

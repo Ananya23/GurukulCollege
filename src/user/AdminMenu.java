@@ -17,7 +17,7 @@ public class AdminMenu {
 	public static void displayMenu() {
 		
 		System.out.println("\n\n=========================================");
-		System.out.println("				ADMIN MENU");
+		System.out.println("               ADMIN MENU");
 		System.out.println("=========================================");
 		System.out.println("1. Insert Course");
 		System.out.println("2. Delete Course");

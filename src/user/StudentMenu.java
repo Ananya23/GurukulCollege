@@ -12,7 +12,7 @@ public class StudentMenu {
 	public static void displayMenu() {
 
 		System.out.println("\n\n=========================================");
-		System.out.println("			STUDENT MENU");
+		System.out.println("               STUDENT MENU");
 		System.out.println("=========================================");
 		System.out.println("1. Update");
 		System.out.println("\npress anything else to go back");

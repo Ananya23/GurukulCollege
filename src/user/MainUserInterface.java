@@ -12,7 +12,7 @@ public class MainUserInterface {
 	public static void displayMenu() {
 
 		System.out.println("\n\n=========================================");
-		System.out.println("				MAIN MENU");
+		System.out.println("                MAIN MENU");
 		System.out.println("=========================================");
 		System.out.println("1. Admin");
 		System.out.println("2. Professor");
