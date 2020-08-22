@@ -1,10 +1,13 @@
 package user;
+
 import entity.Course;
 import entity.Professor;
 import entity.Student;
 import Operations.*;
 import java.util.*;
+
 public class userInterface {
+	
 	Scanner sc = new Scanner(System.in);
 
 	public static void displayMenu() {
@@ -17,8 +20,6 @@ public class userInterface {
 		System.out.println("5. Exit");
 		System.out.println("=========================================");
 	}
-	
-	public static boolean switcher(Connection con,)
 
 	public static void main(String[] args) {
 		

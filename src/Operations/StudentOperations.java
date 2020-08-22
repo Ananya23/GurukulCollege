@@ -5,10 +5,9 @@ import java.util.ArrayList;
 
 import entity.Student;
 
-
 public class StudentOperations {
-	
-	    public static void insertStudent(Connection con, Student student) {
+
+	public static void insertStudent(Connection con, Student student) {
 		
 		String sqlQuery="INSERT INTO student values(?,?)";
 		try {
@@ -21,7 +20,7 @@ public class StudentOperations {
 		}
 	}
 	
-        public static void deleteStudent(Connection con, int studentId) {
+    public static void deleteStudent(Connection con, int studentId) {
 		
 		String sqlQuery="DELETE from student where studentId =?";
 		try {
@@ -32,17 +31,19 @@ public class StudentOperations {
 			e.printStackTrace();
 		}
 	}
+    
     public static void updateStudent(Connection con,String updstudentName , int studentId) {
-    String sqlQuery="update student set studentName=? where studentId=?";
-    try {
-        PreparedStatement ps = con.prepareStatement(sqlQuery);
-        ps.setString(1, updstudentName);
-        ps.setInt(2, studentId);
-        ps.executeUpdate();
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }
-}
+	    String sqlQuery="update student set studentName=? where studentId=?";
+	    try {
+	        PreparedStatement ps = con.prepareStatement(sqlQuery);
+	        ps.setString(1, updstudentName);
+	        ps.setInt(2, studentId);
+	        ps.executeUpdate();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	}
+    
     public static ArrayList<Student> displayStudent(Connection con){
     	ArrayList<Student> student = new ArrayList<Student>();  //employees : all the records of emp4 table is stored
     	Statement stmt;
@@ -55,8 +56,6 @@ public class StudentOperations {
     			String studentName = rs.getString("studentName");
     			Student studento = new Student(studentId,studentName); //calling student constructor
     			student.add(studento);
-    			
-    			
     		}
     	} 
     	catch (SQLException e) {
@@ -65,7 +64,7 @@ public class StudentOperations {
     	for(int i=0; i< student.size(); i++) {  //printing the rec
 			System.out.println(student.get(i));
 		}
-    			return student;
-	
+    	return student;
     }
+    
 }

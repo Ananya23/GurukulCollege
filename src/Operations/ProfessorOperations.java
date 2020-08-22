@@ -7,16 +7,17 @@ public class ProfessorOperations {
 
 		public static void insertProfessor(Connection con,Professor professor) {
 				
-				String sqlQuery="INSERT INTO professor values(?,?)";
-				try {
-					PreparedStatement ps = con.prepareStatement(sqlQuery);
-					ps.setInt(1, professor.getProfessorId());
-					ps.setString(2,professor.getProfessorName());
-					ps.executeUpdate();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
+			String sqlQuery="INSERT INTO professor values(?,?)";
+			try {
+				PreparedStatement ps = con.prepareStatement(sqlQuery);
+				ps.setInt(1, professor.getProfessorId());
+				ps.setString(2,professor.getProfessorName());
+				ps.executeUpdate();
+			} catch (SQLException e) {
+				e.printStackTrace();
 			}
+		}
+		
 		public static void deleteCourse(Connection con, int professorId) {
 			
 			String sqlQuery="DELETE from professor where professorId =?";
@@ -30,6 +31,7 @@ public class ProfessorOperations {
 		}
 		
 		public static void updateCourse(Connection con,String uprofessorName , int professorId) {
+			
 		    String sqlQuery="update professor set professorName=? where professorId=?";
 		    try {
 		        PreparedStatement ps = con.prepareStatement(sqlQuery);
@@ -42,6 +44,7 @@ public class ProfessorOperations {
 		}
 		
 		public static ArrayList<Professor> displayCourse(Connection con){
+			
 			ArrayList<Professor> professor = new ArrayList<Professor>();  //employees : all the records of emp4 table is stored
 			Statement stmt;
 			try {
