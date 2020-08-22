@@ -39,82 +39,76 @@ public class AdminMenu {
 
 		int ch = Integer.parseInt(br.readLine());
 		
+		String name="";
+		int id=0;
+		
 		switch (ch) {
 		
 		case 0:
 			return false;
 
-		case 1:	{
+		case 1:
 			System.out.println("Enter Course Name and ID");
-				String name = br.readLine();
-				int id = Integer.parseInt(br.readLine());
+				name = br.readLine();
+				id = Integer.parseInt(br.readLine());
 			Course cr = new Course(id, name);
 			CourseOperations.insertCourse(con, cr);
 			break;
-		}
 			
-		case 2:	{
+		case 2:
 			System.out.println("Enter Course ID");
-				int id = Integer.parseInt(br.readLine());
+				id = Integer.parseInt(br.readLine());
 			CourseOperations.deleteCourse(con, id);
 			break;
-		}
 		
-		case 3:	{
+		case 3:
 			System.out.println("Enter Course Name and ID");
-				String name = br.readLine();
-				int id = Integer.parseInt(br.readLine());
+				name = br.readLine();
+				id = Integer.parseInt(br.readLine());
 			CourseOperations.updateCourse(con, name, id);
 			break;
-		}
 		
-		case 4:	{
+		case 4:
 			System.out.println("Enter Professor Name and ID");
-				String name = br.readLine();
-				int id = Integer.parseInt(br.readLine());
+				name = br.readLine();
+				id = Integer.parseInt(br.readLine());
 			Professor pr = new Professor(name, id);
 			ProfessorOperations.insertProfessor(con, pr);
 			break;
-		}
 			
-		case 5:	{
+		case 5:
 			System.out.println("Enter Professor ID");
-				int id = Integer.parseInt(br.readLine());
+				id = Integer.parseInt(br.readLine());
 			ProfessorOperations.deleteProfessor(con, id);
 			break;
-		}
 		
-		case 6:	{
+		case 6:
 			System.out.println("Enter Professor Name and ID");
-				String name = br.readLine();
-				int id = Integer.parseInt(br.readLine());
+				name = br.readLine();
+				id = Integer.parseInt(br.readLine());
 			ProfessorOperations.updateProfessor(con, name, id);
 			break;
-		}
 		
-		case 7:	{
+		case 7:
 			System.out.println("Enter Student Name and ID");
-				String name = br.readLine();
-				int id = Integer.parseInt(br.readLine());
+				name = br.readLine();
+				id = Integer.parseInt(br.readLine());
 			Student st = new Student(id, name);
 			StudentOperations.insertStudent(con, st);
 			break;
-		}
 			
-		case 8:	{
+		case 8:
 			System.out.println("Enter Student ID");
-				int id = Integer.parseInt(br.readLine());
+				id = Integer.parseInt(br.readLine());
 			StudentOperations.deleteStudent(con, id);
 			break;
-		}
 		
-		case 9:	{
+		case 9:
 			System.out.println("Enter Student Name and ID");
-				String name = br.readLine();
-				int id = Integer.parseInt(br.readLine());
+				name = br.readLine();
+				id = Integer.parseInt(br.readLine());
 			StudentOperations.updateStudent(con, name, id);
 			break;
-		}
 
 		default:
 			System.out.println("Invalid Input !!!");
