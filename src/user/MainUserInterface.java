@@ -1,17 +1,14 @@
 package user;
 
-import Operations.*;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Connection;
-import java.util.*;
+
+import Operations.MakeDBConnection;
 
 public class MainUserInterface {
 	
-	Scanner sc = new Scanner(System.in);
-
 	public static void displayMenu() {
 
 		System.out.println("\n\n=========================================");
