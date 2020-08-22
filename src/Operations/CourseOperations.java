@@ -56,8 +56,6 @@ public class CourseOperations {
 				String courseName = rs.getString("courseName");
 				Course courseo = new Course(courseId,courseName); //calling student constructor
 				course.add(courseo);
-				
-				
 			}
 		} 
 		catch (SQLException e) {

@@ -32,7 +32,7 @@ public class StudentOperations {
 		}
 	}
     
-    public static void updateStudent(Connection con,String updstudentName , int studentId) {
+    public static void updateStudent(Connection con, String updstudentName , int studentId) {
 	    String sqlQuery="update student set studentName=? where studentId=?";
 	    try {
 	        PreparedStatement ps = con.prepareStatement(sqlQuery);
